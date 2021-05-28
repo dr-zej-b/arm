@@ -1,0 +1,9 @@
+udevadm info -a -n /dev/ttyACM2 | grep '{serial}'
+
+# For my pololus
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1ffb", MODE="0666", ATTRS{serial}=="00176456", SYMLINK+="maestro6_1"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1ffb", MODE="0666", ATTRS{serial}=="00168282", SYMLINK+="maestro24_1"
+
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="A6008isP", SYMLINK+="arduino"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="A7004IXj", SYMLINK+="buspirate"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="FTDIF46B", SYMLINK+="ttyUSB.ARM"

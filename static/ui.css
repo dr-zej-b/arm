@@ -1,0 +1,58 @@
+
+
+body {
+  background: white;
+  margin: 10px;
+}
+
+body,
+input {
+  font-family: sans-serif;
+  font-size: 10pt;
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+}
+
+td {
+  border: 0;
+  padding: 0;
+}
+
+#body {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#input {
+  margin-top: 0.5em;
+}
+
+#inbox .message {
+  padding-top: 0.25em;
+}
+
+#nav {
+  float: right;
+  z-index: 99;
+}
+
+.joystick {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #eee;
+}
+
+.joystick .handle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(201, 44, 44);
+  border: 1px solid rgb(107, 35, 35);
+  border-radius: 15px;
+}
